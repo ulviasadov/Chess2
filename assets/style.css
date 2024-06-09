@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    float: right;
+    background-color: #303030;
+}
+
+#board{
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid #000;
+}
+
+.extra-info{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    width: 450px;
+}
+
+.info-text{
+    background-color: #262626;
+    width: 90%;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.info-display{
+    display: none;
+    transition-duration: 0.5s;
+}
+
+.square{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 88, 139);
+    position: relative;
+}
+
+.square svg{
+    height: 50px;
+    position: relative;
+    z-index: -9;
+}
+
+path{
+    position: relative;
+    z-index: -10;
+}
+
+.piece{
+    position: relative;
+    z-index: 9;
+}
+
+p{
+    color: #ebebeb;
+}
+
+.lightblue{
+    background-color: rgb(60, 146, 203);
+}
+
+.darkBlue{
+    background-color: rgb(8, 56, 89);
+}
+
+.black{
+    fill: #101010;
+}
+
+.white{
+    fill: #ebebeb;
+}
+
+.draggable{
+    cursor: grab;
+}
+
+.draggable:active{
+    cursor: grabbing;
+}
